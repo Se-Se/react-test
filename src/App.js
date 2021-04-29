@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './mock/mockData.js'
+import Routes from "@/router/routes";
 
 function App() {
   console.log(process.env);
-  console.log(this)
+  console.log(React)
   return (
     <div className="App">
       <header className="App-header">
