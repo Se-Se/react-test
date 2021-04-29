@@ -7,7 +7,7 @@ import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
 import api from "./services/api";
 // React.__proto__.$api = api;
-console.log(React)
+// console.log(React)
 ReactDOM.render(
   <React.StrictMode>
     <App />

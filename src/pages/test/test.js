@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect, useRef  } from "react";
 
-function test() {
+function Test() {
   useEffect(() => {
-    console.log(test);
+    console.log('test');
   });
   return (
     <>
@@ -11,4 +11,4 @@ function test() {
   );
 }
 
-export default test;
+export default Test;

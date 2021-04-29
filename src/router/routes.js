@@ -8,12 +8,13 @@ import {
 } from "react-router-dom";
 
 import Test from "@/pages/test/test.js";
+import Home from "@/pages/home/home.js";
 
 export default () => (
   <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/Test" exact component={Test} />
+        <Route path="/test" exact component={Test} />
       </Switch>
   </BrowserRouter>
 );
