@@ -25,12 +25,12 @@ module.exports = function (app) {
         })
     );
     app.use(
-        '/ad/json/536',
+        '/zh-cn',
         createProxyMiddleware({
-            target: 'https://kunpeng.csdn.net/',
+            target: 'https://nodejs.org/',
             changeOrigin: true,
             pathRewrite: {
-                '^/ad': '',
+                '^/zh-cn': '',
             }
         })
     );
