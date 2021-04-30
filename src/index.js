@@ -5,7 +5,7 @@ import "@/assets/css/pc/index.css";
 import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
-import api from "./services/api";
+// import api from "./services/api";
 // React.__proto__.$api = api;
 // console.log(React)
 ReactDOM.render(

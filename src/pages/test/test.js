@@ -1,8 +1,14 @@
-import React, { useState, useEffect, useRef  } from "react";
+import React, { useEffect } from "react";
+import { getTest,getData } from "@/api/index.js";
 
 function Test() {
   useEffect(() => {
-    console.log('test');
+    getTest().then((res) => {
+      console.log(res);
+    });
+    getData().then(res=>{
+      console.log('/api/sars/toheros',res)
+    })
   });
   return (
     <>

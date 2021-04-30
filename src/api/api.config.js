@@ -1,25 +1,25 @@
 import axios from "axios";
 
-
-
 const api = axios.create({
-  Headers: {
-    "Access-Control-Allow-Origin": "*",
-  },
-  defaults: {
-    timeout: 100000,
-    baseUrl: {
-      dev: "http://dev",
-      alpha: "http://alpha",
-      prod: "http://prod",
-    }[process.env.REACT_APP_MODE],
-  },
+  // Headers: {
+  //   "Access-Control-Allow-Origin": "*",
+  // },
+
+  // baseURL: "/api/sars/toheros",
+  timeout: 3000,
+  headers: { "Content-Type": "application/json" },
 });
 
+// api.defaults.timeout = 1000;
+api.defaults.baseURL = {
+  dev: "http://192.168.255.10:8010",
+  alpha: "http://alpha",
+  prod: "http://prod",
+}[process.env.REACT_APP_MODE];
 /**
  * http request 拦截器
  */
-axios.interceptors.request.use(
+api.interceptors.request.use(
   (config) => {
     config.data = JSON.stringify(config.data);
     config.headers = {
@@ -35,7 +35,7 @@ axios.interceptors.request.use(
 /**
  * http response 拦截器
  */
-axios.interceptors.response.use(
+api.interceptors.response.use(
   (response) => {
     if (response.data.errCode === 2) {
       console.log("过期");
@@ -55,7 +55,7 @@ axios.interceptors.response.use(
  */
 export function get(url, params = {}) {
   return new Promise((resolve, reject) => {
-    axios
+    api
       .get(url, {
         params: params,
       })
@@ -78,7 +78,7 @@ export function get(url, params = {}) {
 
 export function post(url, data) {
   return new Promise((resolve, reject) => {
-    axios.post(url, data).then(
+    api.post(url, data).then(
       (response) => {
         //关闭进度条
         resolve(response.data);
@@ -98,7 +98,7 @@ export function post(url, data) {
  */
 export function patch(url, data = {}) {
   return new Promise((resolve, reject) => {
-    axios.patch(url, data).then(
+    api.patch(url, data).then(
       (response) => {
         resolve(response.data);
       },
@@ -119,7 +119,7 @@ export function patch(url, data = {}) {
 
 export function put(url, data = {}) {
   return new Promise((resolve, reject) => {
-    axios.put(url, data).then(
+    api.put(url, data).then(
       (response) => {
         resolve(response.data);
       },
@@ -224,5 +224,3 @@ function landing(url, params, data) {
   if (data.code === -1) {
   }
 }
-
-export default api;
