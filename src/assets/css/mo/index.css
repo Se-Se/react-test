@@ -1,1 +1,26 @@
 @charset "utf-8";
+#root .test_class {
+  background-color: #455485;
+}
+
+@media screen and (orientation: portrait) {
+  html {
+    width: 100vmin;
+    height: 100vmax;
+  }
+  body {
+    width: 100vmin;
+    height: 100vmax;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  html {
+    width: 100vmax;
+    height: 100vmin;
+  }
+  body {
+    width: 100vmax;
+    height: 100vmin;
+  }
+}

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+$color-brand: #006EFF !default;
+
+// fill
+$color-fill-1: #7486c2 !default;
+$color-fill-2: #F3F6FE !default;
+$color-fill-3: $color-brand !default;
+$color-fill-4: #3391FF !default;   //下拉hover背景颜色
+$color-fill-5: #3277F6 !default;
+$color-fill-6: #0076FF !default;  //按钮hover背景色
+$color-fill-7: #EAF4FF !default;  //侧边导航背景色
+$color-fill-8: #12214D !default; // menu dropdown
+$color-fill-9: #07102B !default; // menu pannel bg
+$color-fill-10: #F4F6FD !default; // log_picker bg
+$color-fill-11: #FFFFFF !default; // log post normal
+$color-fill-12: #E3EBFF !default; // log post press
+$color-fill-13: #0c1a48 !default; // log title sep 
+
+
+
+
+// font-size
+$font-size-base: 0.36rem !default;
+$font-size-m   : 0.48rem !default;
+$font-size-l   : 0.6rem !default;
+$font-size-xl  : 0.72rem !default;
+$font-size-xxl : 0.84rem !default;
+$font-size-xxxl: 0.96rem !default;
+$font-size-xxxxl: 60px !default;
+$font-size-xxxxxl: 72px !default;
+
+
+// text
+
+$color-text-1: #737B8A !default; // 正文
+$color-text-2: #17233D !default; // 标题
+$color-text-3: $color-brand !default;
+$color-text-4: $color-fill-1 !default;     //文字标题颜色
+$color-text-5: $color-fill-6 !default;     //hover颜色,重点字体颜色
+$color-text-6:#006EFF !default;        //log_picker select
+$color-text-8:#888888 !default;        //log detail close
+
+
+// #737B8A
+
+// border-radius
+$border-radius-1: 0 0 8px 0;
+$border-radius-2: 0 0 20px 0;
+$corner-1:10px;
+$corner-2:0.1rem;
+// border-color
+$color-line: #EEEEEE !default;   //边框颜色
+$color-line-2:#27365D !default;   //header panel 边框颜色
+$color-line-3:#0076ff !default;   //log_picker select
+$color-line-4:#707070 !default;   //log_picker border
+$color-line-5:#414D71 !default;   //log detail sep border
+
+
+
+// 阴影
+$box-shadow: 0 3px 3px rgba($color: #E5EAF5, $alpha: 0.85);
+$box-shadow2: 0 5px 10px rgba($color: #E5EAF5, $alpha: 1);
+
+$transition: ease .3s;

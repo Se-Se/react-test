@@ -1,18 +1,19 @@
 import React, { useEffect } from "react";
 import { getTest,getData } from "@/api/index.js";
 
-function Test() {
+function Test(props) {
   useEffect(() => {
-    getTest().then((res) => {
-      console.log(res);
-    });
+    console.log(props)
+    // getTest().then((res) => {
+    //   console.log(res);
+    // });
     getData().then(res=>{
-      console.log('/api/sars/toheros',res)
+      console.log('/api/sars/toheros1',res)
     })
   });
   return (
     <>
-      <div>test</div>
+      <div className="test_class">test</div>
     </>
   );
 }

@@ -5,6 +5,5 @@ export async function getTest(params) {
 }
 
 export async function getData(params) {
-  return await get("/api/sars/toheros", params);
+  return await get("api/sars/toheros", params);
 }
-

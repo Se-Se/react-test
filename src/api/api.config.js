@@ -4,8 +4,6 @@ const api = axios.create({
   // Headers: {
   //   "Access-Control-Allow-Origin": "*",
   // },
-
-  // baseURL: "/api/sars/toheros",
   timeout: 3000,
   headers: { "Content-Type": "application/json" },
 });
@@ -132,8 +130,8 @@ export function put(url, data = {}) {
 }
 
 //统一接口处理，返回数据
-export default function (fecth, url, param) {
-  let _data = "";
+export default function fecthFunction (fecth, url, param) {
+  // let _data = "";
   return new Promise((resolve, reject) => {
     switch (fecth) {
       case "get":

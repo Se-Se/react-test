@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+$color-brand: #006EFF !default;
+
+// fill
+$color-fill-1: #455485 !default;
+$color-fill-2: #F3F6FE !default;
+$color-fill-3: $color-brand !default;
+
+
+
+
+// font-size
+$font-size-base: 14px !default;
+$font-size-m   : 16px !default;
+$font-size-l   : 24px !default;
+$font-size-xl  : 30px !default;
+$font-size-xxl : 36px !default;
+$font-size-xxxl: 48px !default;
+$font-size-xxxxl: 60px !default;
+$font-size-xxxxxl: 72px !default;
+
+
+// text
+
+$color-text-1: #737B8A !default; // 正文
+$color-text-2: #17233D !default; // 标题
+$color-text-3: $color-brand !default;
+
+
+
+// 阴影
+$box-shadow: 0 3px 3px rgba($color: #E5EAF5, $alpha: 0.85);
+$box-shadow2: 0 5px 10px rgba($color: #E5EAF5, $alpha: 1);
+$box-shadow3: 0px 1px 3px rgba(0, 0, 0, 0.15);
+
+$transition: ease .3s;
